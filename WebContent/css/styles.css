@@ -1,0 +1,268 @@
+* {
+	/* 	border:1px solid black;
+ */
+ font-family: 'Malgun Gothic', sans-serif;
+ 
+}
+
+div, h1, h2{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+/* 	position: relative;
+ */	width: 100%;
+	min-width: 350px;
+	max-width: 800px;
+	margin: auto;
+}
+
+header {
+	position: relative;
+	vertical-align: middle;
+	width: 100%;
+	display: block;
+}
+
+header>h1 {
+	color: #ffffff;
+	background-color: orange;
+	text-align: center;
+	padding-top: 5px;
+	vertical-align: middle;
+	line-height: 45px;
+	font-size : 2.0em;
+}
+
+h2{
+	text-align: center;
+}
+
+nav {
+	vertical-align: middle;
+	position: relative;
+	width: 100%;
+	margin: 0 0;
+	padding-top: 0px;
+	background: #444;
+	border-bottom: 1px solid #333;
+	height: 53px;
+}
+
+nav.menu{
+	height: 40px;
+}
+
+nav li a, nav span, nav li{
+	color:orange;
+	
+}
+
+nav li a {
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+nav li a:link {
+	color:orange
+}
+
+nav li a:hover {
+	color: #fff;
+}
+
+
+nav ul {
+	position: relative;
+	margin: 0px;
+	padding-left : 5px;
+}
+
+nav ul li {
+	float: left;
+	line-height: normal;
+	margin-left: 5px;
+	list-style: none;
+}
+
+nav ul > li {
+	padding-top: 15px;
+}
+
+.nav_menu_right{
+	float:right;
+	padding-right:10px;
+}
+
+input{
+	font-size : 1.0em;
+	line-height: 1.1em;
+}
+
+input[type="submit, button"]{
+	font-size : 0.6em;
+	line-height : 0.9em;
+	height:1.9em;
+	margin-top: -0.3em;
+}
+
+label{
+	font-size : 0.8em
+}
+
+nav span {
+}
+
+#question_table .select{
+	background : orange;
+	width: 20%;
+	text-align:center;
+}
+
+.selectword, .select{
+	cursor: pointer;
+}
+
+
+
+#table_head {
+	text-align: left;
+	font-size: 1.3em;
+}
+
+#question_table {
+	border: 1px solid orange;
+	width: 350px;
+}
+
+#new_member_table {
+	border: 1px solid orange;
+	width: 90%;
+	font-size: 0.6em;
+}
+
+td {
+	vertical-align: middle;
+	border: 1px solid orange;
+	padding: 5px;
+	font-size: 1.2em;
+}
+
+td a, td a:visited {
+	color: #666;
+	text-decoration: none;
+}
+
+a.wrong_answer{
+	pointer-events: none;
+/* 	color:orange;
+ */   	cursor: default;
+   	display: none;
+}
+
+a.right_answer{
+	pointer-events: none;
+	color: white;
+   	cursor: default;
+}
+
+.hide_element{
+	display: none;
+}
+
+.quiz_control{
+	font-size : 1em;
+	line-height: 1.1em;
+}
+
+hr {
+	text-align: center;
+	margin: 10px auto;
+ 	position: relative;
+	width: 90%;
+	size: 5px;
+}
+
+.info{
+	width:85%;
+	text-align: center;
+	list-style: none inside;
+}
+
+textarea{
+	font-size: 0.6em;
+}
+
+.ta_word{
+	height: 2.5em;
+	width: 15em;
+}
+
+.ta_selection{
+	height: 2.5em;
+	width: 14em;
+}
+
+
+@media screen and (max-width: 500px) {
+	input[type="text"]{
+		width : 75px;
+	}
+	
+	input[type="password"]{
+		width : 75px;
+	}
+	
+	#new_member_table {
+		border: 1px solid orange;
+		width: 90%;
+		font-size: 0.6em;
+	}
+	
+	#new_member_table input{
+		display: inline;
+		width: 190px;
+	}
+	
+	#new_member_table input[type="submit"]{
+		width: 75px;
+	}
+	
+}
+
+@media screen and (min-width: 501px) {
+	input[type="text"]{
+		width : 100px;
+	}
+	
+	input[type="password"]{
+		width : 100px;
+	}
+	
+	#new_member_table {
+		border: 1px solid orange;
+		width: 450px;
+		font-size: 0.8em;
+	}
+	
+	#new_member_table input{
+		display: inline;
+		width: 300px;
+	}
+	
+	#new_member_table input[type="submit"]{
+		width: 100px;
+	}
+	
+}
+
+#cancel_add_member{
+	display: inline;
+}
+
+span.tiny_font{
+	font-size: 0.3em;
+}
+
+

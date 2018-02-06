@@ -1,0 +1,39 @@
+(100 - (
+            (COALESCE((SELECT qcbl.ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 1))), 50) * 0.292) + 
+            (COALESCE((SELECT qcbl.ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 2))), 50) * 0.228) + 
+            (COALESCE((SELECT qcbl.ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 3))), 50) * 0.172) + 
+            (COALESCE((SELECT ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 4))), 50) * 0.124) + 
+            (COALESCE((SELECT ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 5))), 50) * 0.084) + 
+            (COALESCE((SELECT ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 6))), 50) * 0.052) + 
+            (COALESCE((SELECT ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 7))), 50) * 0.028) + 
+            (COALESCE((SELECT ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 8))), 50) * 0.012) + 
+            (COALESCE((SELECT ratio_1st
+                        FROM question_correct_by_level qcbl
+                        WHERE ((qcbl.question_id = new.question_id)
+                            AND (qcbl.member_level = 9))), 50) * 0.004)
+    )
+)
